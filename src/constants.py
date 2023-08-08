@@ -1,0 +1,12 @@
+## Format types
+FORMAT_NAME = 'Format name'
+FORMAT_DATE = 'Format date'
+FORMAT_NAS = 'Format NAS'
+FORMAT_EMAIL = 'Format email'
+FORMAT_ADDRESS = 'Format address'
+FORMAT_PHONE = 'Format phone number'
+FORMAT_NUMBER = 'Format number'
+FORMAT_LOGIN = 'Format login'
+FORMAT_TEXT = 'Format text'
+FORMAT_TYPES = {FORMAT_NAME, FORMAT_DATE, FORMAT_NAS, FORMAT_EMAIL, FORMAT_ADDRESS, FORMAT_PHONE, FORMAT_NUMBER, FORMAT_LOGIN, FORMAT_TEXT}
+

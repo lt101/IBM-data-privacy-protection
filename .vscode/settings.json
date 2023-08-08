@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "C_Cpp.errorSquiggles": "disabled",
+    "docify.commentService.programmingLanguage": "python",
+    "docify.commentService.docstringFormat": "Doxygen"
+}

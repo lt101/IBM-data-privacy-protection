@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id 'application'
+}
+
+dependencies {
+    implementation project(path: ':library')
+    implementation fileTree(dir: 'dependencies', include: ['*.jar'])
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+}
+
+sourceCompatibility = '19' 
+targetCompatibility = '19' 
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url = uri('https://www.dcm4che.org/maven2')
+    }
+}
+
+application {
+    mainClassName = 'DataProcessing.Server'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['DataProcessing']
+        }
+    }
+}
+

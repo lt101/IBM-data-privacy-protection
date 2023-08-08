@@ -1,0 +1,28 @@
+{
+  "user": "guest",
+  "pswd": "guest",
+  "host": "rabbitmq-server",
+  "port": 5672,
+  "exchange_name": "dpt_exchange",
+  "exchange_type": "direct",
+  "queues" : 
+  [
+    {
+      "queue_name":"type_id_queue",
+      "routing_key" : "type_id",
+      "durable" : "false",
+      "excl" : "false",
+      "auto_del" : "false",
+      "queue_args" : {}
+    },
+    {
+      "queue_name":"vuln_id_queue",
+      "routing_key" : "vuln_id",
+      "durable" : "false",
+      "excl" : "false",
+      "auto_del" : "false",
+      "queue_args" : {}
+    }
+  ]
+}
+  

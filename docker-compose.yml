@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  rabbitmq-server:
+    image: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  dp-server:
+    build:
+      context: ./dp
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - HOSTNAMERABBIT=rabbitmq-server
+    restart: on-failure
+    depends_on:
+      - rabbitmq-server
+  
+  streamlit:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - HOSTNAMERABBIT=rabbitmq-server
+    restart: on-failure
+    depends_on:
+      - rabbitmq-server

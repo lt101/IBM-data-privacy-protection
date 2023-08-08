@@ -1,0 +1,26 @@
+Starting a Gradle Daemon, 1 busy and 1 incompatible and 6 stopped Daemons could not be reused, use --status for details
+
+> Configure project :
+rock and stone !
+
+> Task :clean
+> Task :library:clean FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:clean'.
+> java.io.IOException: Unable to delete directory 'C:\Users\lasal\Desktop\LOG89XX-39\src\data-privacy-toolkit\library\build'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - C:\Users\lasal\Desktop\LOG89XX-39\src\data-privacy-toolkit\library\build\libs\library-6.0.0.jar
+    - C:\Users\lasal\Desktop\LOG89XX-39\src\data-privacy-toolkit\library\build\libs
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3s
+2 actionable tasks: 2 executed

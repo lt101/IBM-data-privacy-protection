@@ -1,0 +1,18 @@
+
+> Configure project :
+rock and stone !
+
+> Task :library:compileJava UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :library:processResources UP-TO-DATE
+> Task :library:classes UP-TO-DATE
+> Task :library:jar UP-TO-DATE
+
+> Task :run
+java !
+spammed !
+
+BUILD SUCCESSFUL in 4s
+5 actionable tasks: 1 executed, 4 up-to-date
